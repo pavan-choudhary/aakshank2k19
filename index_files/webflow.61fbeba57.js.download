@@ -705,65 +705,6 @@
 	  // -----------------------------------
 	  // Module methods
 
-	  api.ready = function() {
-	    var doBranding = $html.attr('data-wf-status');
-	    var publishedDomain = $html.attr('data-wf-domain') || '';
-
-	    if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
-	      doBranding = true;
-	    }
-
-	    if (doBranding) {
-	      var $branding = $('<div></div>');
-	      var $link = $('<a></a>');
-	      $link.attr('href', 'http://webflow.com?utm_campaign=brandjs');
-
-	      $branding.css({
-	        position: 'fixed',
-	        bottom: 0,
-	        right: 0,
-	        zIndex: 2147483647,
-	        borderTopLeftRadius: '5px',
-	        backgroundColor: '#2b3239',
-	        padding: '8px 12px 5px 15px',
-	        fontFamily: 'Arial',
-	        fontSize: '10px',
-	        textTransform: 'uppercase',
-	        opacity: '0',
-	        transition: 'opacity 0.50s ease-in-out'
-	      });
-
-	      $link.css({
-	        color: '#AAADB0',
-	        textDecoration: 'none'
-	      });
-
-	      var $webflowLogo = $('<img>');
-	      $webflowLogo.attr('src', 'https://daks2k3a4ib2z.cloudfront.net/54153e6a3d25f2755b1f14ed/5445a4b1944ecdaa4df86d3e_subdomain-brand.svg');
-	      $webflowLogo.css({
-	        opacity: 0.9,
-	        width: '57px',
-	        verticalAlign: 'middle',
-	        paddingLeft: '4px',
-	        paddingBottom: '3px'
-	      });
-
-	      $branding.text('Built with');
-	      $branding.append($webflowLogo);
-	      $link.append($branding);
-
-	      $body.append($link);
-
-	      if (/PhantomJS/.test(window.navigator.userAgent)) {
-	        return;
-	      }
-
-	      $branding.css({
-	        opacity: '1.0'
-	      });
-	    }
-	  };
-
 	  // Export module
 	  return api;
 	});

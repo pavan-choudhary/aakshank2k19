@@ -21,6 +21,18 @@ body {
   line-height: 24px;
 }
 
+@media only screen and (max-width:768px) {
+  .logo-image {
+    width: 20% !important;
+  }
+  .home-slide-container {
+    padding-top: 0px !important;
+  }
+  .slider-text-block {
+    top:45%;
+  }
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -221,17 +233,17 @@ p {
 }
 
 .home-slide {
-  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559fc047bcccd97730700640_Gallery-3.jpg");
+  background-image: url("../assets/img/1.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .home-slide._2 {
-  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559f993ccbb5f93e0e6a512d_Foto-1.jpg");
+  background-image: url("../assets/img/backdrop.JPG");
 }
 
 .home-slide._3 {
-  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559fc054bcccd97730700641_Gallery-5.jpg");
+  background-image: url("../assets/img/bg.jpg");
 }
 
 .home-slide-container {
@@ -1044,6 +1056,10 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.pad-top {
+  padding-top: 22px !important;
 }
 
 .text-logo.subtitle {

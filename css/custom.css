@@ -1,0 +1,59 @@
+@font-face {
+font-family: "protos";
+src: url("../fonts/Protos.otf");
+}
+body{
+	overflow-x:hidden;
+}
+.top-layer{
+	height:100%;
+	width:85%;
+	margin-left:15%;
+	padding-top:160px;
+	background:transparent;
+	position:absolute;top:0;
+	z-index:99;
+}
+.logo-image{
+	width:300px;
+}
+#home-subtitle{
+	color:#fff;
+	margin-top:60px;
+  font-family:"Lobster";
+  font-size:40px;
+  letter-spacing:3px;
+  line-height:60px;
+}
+#home-subtitle span{
+	padding:3px;
+	background-color:rgba(0,0,0,0.2);
+}
+#head2{color:#fff; font-family:'Oswald';margin-left:50px; font-size:20px; padding-top:20px;text-align:center;}
+@media only screen and (max-width: 600px) {
+	.top-layer{
+		width:100%;
+		margin:0;
+		padding-top:100px;
+	}
+	.logo-image{
+		width:100%;
+	}
+	#home-subtitle{
+		width:100%;
+		padding-top:30px;
+		margin-top:20px;
+	  font-size:26px;
+	  text-align:center;
+	  letter-spacing:3px;
+	  line-height:40px;
+	}
+	#head2{ 
+		width:100%;
+		padding-top:0;
+		text-align:center;
+		position: absolute;
+		bottom:6em;
+		margin-left:0;
+	}
+}

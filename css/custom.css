@@ -3,14 +3,20 @@ font-family: "protos";
 src: url("../fonts/Protos.otf");
 }
 body{
-	overflow-x:hidden;
+	
 }
+#one{
+	background:url(../assets/img/backdrop.JPG);
+	background-position: center;
+	background-size:cover;
+}
+#two{ height:100%; }
 .top-layer{
 	height:100%;
-	width:85%;
-	margin-left:15%;
+	width:100%;
+	padding-left:15%;
 	padding-top:160px;
-	background:transparent;
+	background:rgba(0,0,0,0.5);
 	position:absolute;top:0;
 	z-index:99;
 }
@@ -29,11 +35,23 @@ body{
 	padding:3px;
 	background-color:rgba(0,0,0,0.2);
 }
-#head2{color:#fff; font-family:'Oswald';margin-left:50px; font-size:20px; padding-top:20px;text-align:center;}
+#head2{
+	color:#fff;
+	font-family:'Oswald';
+	margin-left:50px; font-size:20px; padding-top:20px;text-align:center;
+	text-decoration:underline overline;
+}
+/*STARS SECTION*/
+.star{
+		width:200px;
+		display:inline-block;
+}
+
 @media only screen and (max-width: 600px) {
 	.top-layer{
 		width:100%;
 		margin:0;
+		padding-left:0;
 		padding-top:100px;
 	}
 	.logo-image{
@@ -56,4 +74,37 @@ body{
 		bottom:6em;
 		margin-left:0;
 	}
+	/*STARS SEcTION*/
+	.star{
+		width:45%;
+		display:inline-block;
+	}
+	.star2{
+		width:80%;
+		display:inline-block;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.top-layer{
+		width:100%;
+		margin:0;
+		padding-top:100px;
+	}
+	.logo-image{
+		width:120px !important;
+	}
+	#home-subtitle{
+		padding-top:10px;
+		margin-top:0;
+	  font-size:20px;
+	  line-height:29px;
+	}
+	#head2{
+		bottom:6em;
+	}
+	.text-logo {
+    font-size: 2em;
+    line-height: 15px;
+  }
 }

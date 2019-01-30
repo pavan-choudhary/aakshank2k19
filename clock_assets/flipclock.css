@@ -80,7 +80,7 @@
   font-weight: bold;
   line-height: 50px;
   border-radius: 6px;
-  background: #000;
+  background: transparent;
 }
 
 .flip-clock-wrapper ul li {
@@ -163,9 +163,17 @@
   font-size: 30px; }
 
 .flip-clock-wrapper ul li a div.up div.inn { color:#333; background-color:#fff;
+  border:1px solid navy;
+  -moz-box-shadow:    inset 0 0 10px #333;
+   -webkit-box-shadow: inset 0 0 10px #333;
+   box-shadow:         inset 0 0 10px #333;
   top: 0; }
 
 .flip-clock-wrapper ul li a div.down div.inn {color:#232323; background-color:#fff;
+  border:1px solid navy;
+  -moz-box-shadow:    inset 0 0 10px #333;
+   -webkit-box-shadow: inset 0 0 10px #333;
+   box-shadow:         inset 0 0 10px #333;
   bottom: 0; }
 
 /* PLAY */
@@ -479,3 +487,39 @@
   right: -51px; }
 
 } 
+
+@media only screen and (max-width: 370px) {
+.clock-builder-output{
+  width:100%;
+  padding-left:14px;
+  bottom:55px;
+}
+.flip-clock-wrapper ul {
+  margin:-3px;
+  width:20px;
+  height:35px;
+  font-size: 8px;
+  line-height: 35px;
+}
+.flip-clock-wrapper ul li a div div.inn {
+  font-size: 20px; }
+.flip-clock-dot {
+  width: 5px;
+  height: 5px;
+  left:0; }
+.flip-clock-divider .flip-clock-label {
+  right: -47px; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -55px; }
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -57px; }
+}
+
+@media only screen and (max-width: 323px) {
+.clock-builder-output{
+  width:100%;
+  padding-left:3px;
+  bottom:55px;
+}
+}

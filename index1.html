@@ -4,13 +4,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Aakshank 2K19</title>
-    <script src="js/webfont.js"></script>
+    <meta name="theme-color" content="#242424">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/webfont.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       WebFont.load({
         google: {
           families: [
+          	"Lobster:400",
             "Oswald:300,400,700",
             "Montserrat:400,700",
             "PT Sans:400,400italic,700,700italic",
@@ -25,336 +29,113 @@
   </head>
 
   <body>
-    <!-- <div class="popup" data-ix="hide-popup" style="opacity: 0; display: none;">
-      <div
-        class="popup-block"
-        data-ix="hide-popup-block"
-        style="opacity: 0; transform: translateX(0px) translateY(50px) translateZ(0px); display: none;"
-      >
-        <div class="popup-content-block">
-          <div class="popup-title">Contact us</div>
-          <div class="popup-title subtitle">Got plans for a party?</div>
-          <a
-            class="close-popup-button w-inline-block"
-            data-ix="close-popup"
-            href="http://template-waiters.webflow.io/#"
-            style="transition: background-color 0.25s ease 0s;"
-            ><img
-              class="close-icon"
-              src="./index_files/55d2fc5e5966c0495f2be269_Icon-close-white.png"
-          /></a>
-        </div>
-        <div class="popup-form w-form">
-          <form
-            data-name="Email Form"
-            id="wf-form-Email-Form"
-            name="wf-form-Email-Form"
-          >
-            <input
-              class="field w-input"
-              data-name="Name"
-              id="name"
-              maxlength="256"
-              name="name"
-              placeholder="Enter your name"
-              type="text"
-            />
-            <input
-              class="field w-input"
-              data-name="Phone"
-              id="Phone"
-              maxlength="256"
-              name="Phone"
-              placeholder="Enter your phone number"
-              type="text"
-            />
-            <input
-              class="field w-input"
-              data-name="Email 2"
-              id="email-2"
-              maxlength="256"
-              name="email"
-              placeholder="Enter your email address"
-              required="required"
-              type="email"
-            />
-            <textarea
-              class="area field w-input"
-              data-name="Message"
-              id="Message"
-              maxlength="5000"
-              name="Message"
-              placeholder="Enter message..."
-            ></textarea>
-            <input
-              class="button submit w-button"
-              data-wait="Please wait..."
-              type="submit"
-              value="Submit"
-            />
-          </form>
-          <div class="success-bg w-form-done">
-            <p>Thank you! Your submission has been received!</p>
-          </div>
-          <div class="error-bg w-form-fail">
-            <p>Oops! Something went wrong while submitting the form</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="fixed-buttons-bottom-right">
-      <a
-        class="fixed-button w-inline-block"
-        href="http://template-waiters.webflow.io/experience"
-      >
+<!--     <div class="fixed-buttons-bottom-right">
+      <a class="fixed-button w-inline-block" href="#">
         <div class="fixed-button-title">Interested?</div>
         <div class="fixed-button-title subtitle">Click to learn more</div>
       </a>
     </div> -->
-    <!-- <div
-      class="fixed-navbar-wrapper"
-      data-ix="fixed-navbar"
-      style="opacity: 1; display: block; transition: opacity 800ms ease 0s;"
-    >
-      <div
-        class="navbar w-nav"
-        data-animation="over-left"
-        data-collapse="medium"
-        data-doc-height="1"
-        data-duration="400"
-      >
-        <div class="navbar-container w-container">
-          <a
-            class="logo-container w-inline-block w--current"
-            href="http://template-waiters.webflow.io/"
-          >
-            <div class="text-logo">Waiters</div>
-            <div class="subtitle text-logo">Party organisers</div>
-          </a>
-          <nav class="nav-menu w-nav-menu" role="navigation">
-            <a
-              class="logo-container responsive-menu w-hidden-main w-inline-block w--current"
-              href="http://template-waiters.webflow.io/"
-            >
-              <div class="text-logo">Aakshank</div>
-              <div class="subtitle text-logo">2K19</div> </a
-            ><a
-              class="nav-link w-nav-link w--current"
-              href="http://template-waiters.webflow.io/"
-              style="max-width: 940px;"
-              >Home</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/packaging-pricing"
-              style="max-width: 940px;"
-              >Package &amp; Pricing</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/experience"
-              style="max-width: 940px;"
-              >Experience</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/about"
-              style="max-width: 940px;"
-              >About</a
-            ><a
-              class="nav-link w-nav-link"
-              data-ix="open-popup"
-              href="http://template-waiters.webflow.io/#"
-              style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s; max-width: 940px;"
-              >Contact</a
-            >
-          </nav> -->
-    <!-- <div class="menu-button w-nav-button">
-            <div class="hamburger-icon w-icon-nav-menu"></div>
-          </div> -->
-    <!-- </div>
-        <div class="w-nav-overlay" data-wf-ignore=""></div>
-      </div>
-    </div> -->
-    <div
-      class="navbar-wrapper"
-      data-ix="show-navbar"
-      style="opacity: 1; transition: opacity 500ms ease 0s;"
-    >
-      <div
-        class="navbar w-nav"
-        data-animation="over-left"
-        data-collapse="medium"
-        data-doc-height="1"
-        data-duration="400"
-      >
+  <section>
+    <div class="navbar-wrapper" data-ix="show-navbar" style="opacity: 1; transition: opacity 500ms ease 0s;">
+      <div class="navbar w-nav" data-animation="over-left" data-collapse="medium" data-doc-height="1" data-duration="400">
         <div class="navbar-container w-container">
           <a class="logo-container" href="http://www.aakshank.org">
-            <div class="logo-image" style="display:inline-block;width: 10%">
+            <!--logo
+            <div class="logo-image" style="display:inline-block;width:100px;">
               <img src="assets/img/log.png" alt="" />
             </div>
-            <div style="display:inline-block;position:fixed;">
+            -->
+            <div style="display:inline-block;">
               <div class="text-logo pad-top" style="display:inline-block;">
-                Aakshank 2K19
+                Aakshank <sup>2K19</sup>
               </div>
               <div class="subtitle text-logo">
                 IET DAVV's Annual Cultural fest
               </div>
             </div>
           </a>
-          <!-- <nav class="nav-menu w-nav-menu" role="navigation">
-            <a
-              class="logo-container responsive-menu w-hidden-main w-inline-block w--current"
-              href="http://template-waiters.webflow.io/"
-            >
-              <div class="text-logo">Waiters</div>
-              <div class="subtitle text-logo">Party organisers</div> </a
-            ><a
-              class="nav-link w-nav-link w--current"
-              href="http://template-waiters.webflow.io/"
-              style="max-width: 940px;"
-              >Home</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/packaging-pricing"
-              style="max-width: 940px;"
-              >Package &amp; Pricing</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/experience"
-              style="max-width: 940px;"
-              >Experience</a
-            ><a
-              class="nav-link w-nav-link"
-              href="http://template-waiters.webflow.io/about"
-              style="max-width: 940px;"
-              >About</a
-            ><a
-              class="nav-link w-nav-link"
-              data-ix="open-popup"
-              href="http://template-waiters.webflow.io/#"
-              style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s; max-width: 940px;"
-              >Contact</a
-            >
-          </nav> -->
-          <!-- <div class="menu-button w-nav-button">
+          <!-- nav tabs here-->
+          <nav class="nav-menu w-nav-menu" role="navigation">
+            <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
+              <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
+              <div class="subtitle text-logo">IET DAVV</div> </a>
+
+            <a class="nav-link w-nav-link w--current" href="aakshank.org" style="max-width: 940px;" >
+                Home
+            </a>
+            <a class="nav-link w-nav-link" href="#" style="max-width: 940px;" >
+              Gallery
+            </a>
+            <a class="nav-link w-nav-link" href="#" style="max-width: 940px;" >   About
+            </a>
+            <a class="nav-link w-nav-link" href="# style="max-width: 940px;" >Contact
+            </a>
+            <a class="nav-link w-nav-link" data-ix="open-popup" href="#" style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s; max-width: 940px;" >
+              Campus Ambassador
+            </a>
+          </nav>
+          <div class="menu-button w-nav-button">
             <div class="hamburger-icon w-icon-nav-menu"></div>
-          </div> -->
+          </div>
         </div>
         <div class="w-nav-overlay" data-wf-ignore=""></div>
       </div>
     </div>
+    <!--background slides -->
     <div class="home-hero" data-ix="show-fixed-navbar" id="top">
-      <div
-        class="home-slider w-slider"
-        data-animation="cross"
-        data-autoplay="1"
-        data-delay="5000"
-        data-duration="1500"
-        data-infinite="1"
-        data-ix="show-slider-arrows"
-      >
+      <div class="home-slider w-slider" data-animation="cross" data-autoplay="1" data-delay="5000" data-duration="1500" data-infinite="1" data-ix="show-slider-arrows">
         <div class="w-slider-mask">
-          <div
-            class="_2 home-slide w-slide"
-            style="transform: translateX(0px); opacity: 0; z-index: 21; transition: opacity 1500ms ease 0s;"
-          >
-            <div class="home-slide-overlay">
-              <div class="home-slide-container w-container">
-                <div class="slider-text-block">
-                  <h2
-                    class="home-slide-title"
-                    data-ix="slider-title-animation"
-                    style="opacity: 0; transform: translateX(-50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Coming Soon !!
-                  </h2>
-                  <h2
-                    class="_2 home-slide-title"
-                    data-ix="slider-title-animation-2"
-                    style="opacity: 0; transform: translateX(50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Central India's Largest Cultural Fest<br />
-                    contact@aakshank.org
-                  </h2>
-                </div>
-              </div>
-            </div>
+          <div class="_2 home-slide w-slide" style="transform: translateX(0px); opacity: 0; z-index: 21; transition: opacity 1500ms ease 0s;">
+            <div class="home-slide-overlay"> </div>
           </div>
-          <div
-            class="home-slide w-slide"
-            style="transform: translateX(-1349px); opacity: 1; z-index: 22; transition: opacity 1500ms ease 0s;"
-          >
-            <div class="home-slide-overlay">
-              <div class="home-slide-container w-container">
-                <div class="slider-text-block">
-                  <h2
-                    class="home-slide-title"
-                    data-ix="slider-title-animation"
-                    style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Coming Soon !!
-                  </h2>
-                  <h2
-                    class="_2 home-slide-title"
-                    data-ix="slider-title-animation-2"
-                    style="opacity: 0; transform: translateX(50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Central India's Largest Cultural Fest<br />
-                    contact@aakshank.org
-                  </h2>
-                </div>
-              </div>
-            </div>
+          <div class="home-slide w-slide" style="transform: translateX(-1349px); opacity: 1; z-index: 22; transition: opacity 1500ms ease 0s;">
+            <div class="home-slide-overlay"> </div>
           </div>
-          <div
-            class="_3 home-slide w-slide"
-            style="transform: translateX(-2698px); opacity: 0; z-index: 23;"
-          >
-            <div class="home-slide-overlay">
-              <div class="home-slide-container w-container">
-                <div class="slider-text-block">
-                  <h2
-                    class="home-slide-title"
-                    data-ix="slider-title-animation"
-                    style="opacity: 0; transform: translateX(-50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Coming Soon !!
-                  </h2>
-                  <h2
-                    class="_2 home-slide-title"
-                    data-ix="slider-title-animation-2"
-                    style="opacity: 0; transform: translateX(50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Central India's Largest Cultural Fest<br />
-                    contact@aakshank.org
-                  </h2>
-                </div>
-              </div>
-            </div>
+          <div class="_3 home-slide w-slide" style="transform: translateX(-2698px); opacity: 0; z-index: 23;" >
+            <div class="home-slide-overlay"> </div>
           </div>
         </div>
-        <!-- <div
-          class="slider-button-left w-slider-arrow-left"
-          data-ix="hide-left-arrow"
-          style="transition: background-color 0.25s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 0; transform: translateX(-100px) translateY(0px) translateZ(0px);"
-        >
-          <div class="slider-arrow-icon w-icon-slider-left"></div>
-        </div>
-        <div
-          class="slider-button-right w-slider-arrow-right"
-          data-ix="hide-right-arrow"
-          style="transition: background-color 0.25s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 0; transform: translateX(100px) translateY(0px) translateZ(0px);"
-        >
-          <div class="slider-arrow-icon w-icon-slider-right"></div>
-        </div>
-        <div
-          class="home-slider-navigation w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-round w-slider-nav"
-        >
-          <div class="w-slider-dot" data-wf-ignore=""></div>
-          <div class="w-slider-dot" data-wf-ignore=""></div>
-          <div class="w-slider-dot w-active" data-wf-ignore=""></div>
-        </div> -->
       </div>
     </div>
-    <!-- <div class="home-intro section">
+    <!--top layer-->
+    <div class="top-layer">
+    	<div class="w-row">
+    		<div class="w-col w-col-4 w-col-tiny-12">
+    			<center><img src="assets/logo.png" class="logo-image"></center>
+    		</div>
+    		<div class="w-col w-col-8 w-col-tiny-12">
+  				<h1 id="home-subtitle">
+  						<span>"Welcome to</span> <br> &nbsp;
+  						<span> Central India's</span><br> &nbsp;&nbsp; 
+  						<span> Largest Cultural Fest!!"</span><br>
+  				</h1>
+    		</div>
+    	</div>
+
+    	<p id="head2"><b>Unveiling in</b></p>
+	    		<!-- countdown -->
+      <div class="clock-builder-output" style="width:auto"></div>
+      <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+      <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+      <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+      <script type="text/javascript">
+          $(function(){
+            FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+            var opts = {
+              clockFace: 'DailyCounter',
+              countdown: true,
+              language: 'Custom'
+            };  
+            var countdown = 1551502800 - ((new Date().getTime())/1000); // from: 03/02/2019 10:30 am +0530
+            countdown = Math.max(1, countdown);
+            $('.clock-builder-output').FlipClock(countdown, opts);
+          });
+      </script>
+    </div>
+  </section>
+  <!-- Intro -->
+  <section>
+    <div class="home-intro section">
         <div class="centered home-container w-container">
             <h2 class="white-section-title" data-ix="fade-in-on-scroll-1" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 800ms ease 0s, transform 800ms ease 0s;">We will take care of the party. You just enjoy.</h2>
             <h2 class="_2 white-section-title" data-ix="fade-in-on-scroll-2" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 800ms ease 0s, transform 800ms ease 0s;">THERE IS ALWAYS A REASON FOR A PARTY.</h2></div>
@@ -390,7 +171,11 @@
             <div class="section-tooltip" data-ix="hide-tooltip" style="transition: background-color 0.25s ease 0s; opacity: 0; transform: translateX(0px) translateY(20px) translateZ(0px);">Discover more</div>
         </a>
     </div>
-    <div class="home-section">
+  </section>
+  <<section class="vertical-scrolling">
+    <h1>HEADIND</h1>
+  </section>
+    <!--<div class="home-section">
         <div class="container w-container">
             <div class="_2-column-row w-row">
                 <div class="image-column-left w-col w-col-6 w-col-small-6 w-hidden-tiny"></div>
@@ -961,8 +746,7 @@
                 <div class="bottom-footer-text">Copyright © 2015 Waiters</div><a class="bottom-footer-link link" href="http://template-waiters.webflow.io/404">Privacy Policy</a><a class="bottom-footer-link link" href="http://template-waiters.webflow.io/faq">FAQ</a></div>
         </div>
     </div> -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+   <script src="js/script.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->

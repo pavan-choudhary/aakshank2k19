@@ -276,6 +276,7 @@ p {
   color: #fff;
   font-size: 34px;
   text-align: center;
+  display:none;
 }
 
 .menu-button:hover {
@@ -2220,6 +2221,7 @@ html.w-mod-js *[data-ix="team-tab-text"] {
     margin-top: 0px;
     margin-right: 25px;
     padding-top: 10px;
+    display: block;
   }
   .nav-link {
     height: auto;

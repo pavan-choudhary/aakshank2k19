@@ -41,32 +41,35 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script> 
 </head>
 <body>
-          <!-- MENU -->
-        <div class="menu-button w-nav-button" style="position:fixed; z-index:99; display:block; top:16px;right:10px;">
-          <div class="hamburger-icon w-icon-nav-menu"></div>
-        </div>
-          <div class="w-nav-overlay" data-wf-ignore=""> </div>
-          <div class="w-nav-overlay" data-wf-ignore="" id="menu">
-            <nav class="nav-menu w-nav-menu w--nav-menu-open" role="navigation" style="transform: translateX(0px) translateY(0px); height: 655px; transition: transform 400ms;z-index:99;">
-              <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
-                <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
-                <div class="subtitle text-logo">IET DAVV</div> </a>
+<div id="load">
+  <center><img src="assets/logo.png"></center>
+</div>
+  <!-- MENU -->
+<div class="menu-button w-nav-button" style="position:fixed; z-index:99; display:block; top:16px;right:10px;">
+  <div class="hamburger-icon w-icon-nav-menu"></div>
+</div>
+  <div class="w-nav-overlay" data-wf-ignore=""> </div>
+  <div class="w-nav-overlay" data-wf-ignore="" id="menu">
+    <nav class="nav-menu w-nav-menu w--nav-menu-open" role="navigation" style="transform: translateX(0px) translateY(0px); height: 655px; transition: transform 400ms;z-index:99;">
+      <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
+        <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
+        <div class="subtitle text-logo">IET DAVV</div> </a>
 
-              <a class="nav-link w-nav-link w--nav-link-open" href="aakshank.org" style="">
-                  Home
-              </a>
-              <a class="nav-link w-nav-link w--nav-link-open" href="#" style="">
-                Gallery
-              </a>
-              <a class="nav-link w-nav-link w--nav-link-open" href="#" style=""> About
-              </a>
-              <a class="nav-link w-nav-link w--nav-link-open" href="#">Contact
-              </a>
-              <a class="nav-link w-nav-link w--nav-link-open" data-ix="open-popup" href="#" style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s;">
-                Campus Ambassador
-              </a>
-            </nav>
-          </div>
+      <a class="nav-link w-nav-link w--nav-link-open" href="aakshank.org" style="">
+          Home
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#" style="">
+        Gallery
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#" style=""> About
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#">Contact
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" data-ix="open-popup" href="#" style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s;">
+        Campus Ambassador
+      </a>
+    </nav>
+  </div>
   
 <div id="fullpage">
   <section class="vertical-scrolling" id="one">
@@ -118,7 +121,7 @@
           <center><img src="assets/logo.png" class="logo-image"></center>
         </div>
         <div class="w-col w-col-8 w-col-tiny-12">
-          <h1 id="home-subtitle">
+          <h1 id="home-subtitle" style="font-family:Kaushan Script">
               <span>"Welcome to</span> <br> &nbsp;
               <span> Central India's</span><br> &nbsp;&nbsp; 
               <span> Largest Cultural Fest!!"</span><br>
@@ -463,7 +466,8 @@
       WebFont.load({
         google: {
           families: [
-            "Lobster:400",
+            "Kaushan Script:400",
+            ///"Lobster:400",
             "Oswald:300,400,700",
             "Montserrat:400,700",
             "PT Sans:400,400italic,700,700italic",
@@ -489,6 +493,13 @@ $('#fullpage').fullpage({
 $(".hamburger-icon").click(function(){
   $("#menu").animate({
     width: "toggle"
+  });
+});
+$(document).ready(function() {
+  $("#fullpage").hide();
+  $(window).load(function() {
+    $("#load").fadeOut("slow");
+    $("#fullpage").fadeIn();
   });
 });
 </script>

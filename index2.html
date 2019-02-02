@@ -10,7 +10,34 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/timelineStyle.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/ZeroX-DG/style-helper/master/scss/_FlatColors.scss">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+  <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script> 
 </head>
 <body>
@@ -141,6 +168,247 @@
       </div>
     </div>
   </section>
+  <section class="vertical-scrolling timeline-section">
+    <div class="box box-1 mySlides fade-effect">
+      <div class="mask"></div>
+      <div class="time">
+        <span id="date">Day 1</span><br>
+        <span id="fulldate">September,11,2016</span>
+      </div>
+      <div class="middle">
+        <span id="hi">Hello Hưng !</span>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="hour">
+                <span>8</span>
+                <span id="sub">AM</span>
+              </div>
+              <div class="work">
+                <span>have some breakfast!</span><br />
+                <span id="sub">delicious noodle</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span>9</span>
+                <span id="sub">AM</span>
+              </div>
+              <div class="work">
+                <span>Working on my new UI</span><br />
+                <span id="sub">nice design !</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span>12</span>
+                <span id="sub">AM</span>
+              </div>
+              <div class="work">
+                <span>Lunchtime!</span><br />
+                <span id="sub">awesome meat stew</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span>2</span>
+                <span id="sub">PM</span>
+              </div>
+              <div class="work">
+                <span>Lunchtime!</span><br />
+                <span id="sub">awesome meat stew</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="bottom">
+      <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+      <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+      <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+    </div>
+    <div class="box box-2 mySlides fade-effect">
+        <div class="mask"></div>
+        <div class="time">
+          <span id="date">Day 2</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>2</span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="box box-3 mySlides fade-effect">
+        <div class="mask"></div>
+        <div class="time">
+          <span id="date">Day 3</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>2</span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="box box-4 mySlides fade-effect">
+        <div class="mask"></div>
+        <div class="time">
+          <span id="date">Day 4</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>2</span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
   <section class="vertical-scrolling">
     <div class="centered home-container w-container">
       <h2 class="white-section-title">STARS 2019</h2>
@@ -223,6 +491,34 @@ $(".hamburger-icon").click(function(){
     width: "toggle"
   });
 });
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  console.log(slides)
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+
+} 
 </script>
 </body>
 

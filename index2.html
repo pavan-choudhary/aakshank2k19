@@ -14,6 +14,33 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script> 
 </head>
 <body>
+          <!-- MENU -->
+        <div class="menu-button w-nav-button" style="position:fixed; z-index:99; display:block; top:16px;right:10px;">
+          <div class="hamburger-icon w-icon-nav-menu"></div>
+        </div>
+          <div class="w-nav-overlay" data-wf-ignore=""> </div>
+          <div class="w-nav-overlay" data-wf-ignore="" id="menu">
+            <nav class="nav-menu w-nav-menu w--nav-menu-open" role="navigation" style="transform: translateX(0px) translateY(0px); height: 655px; transition: transform 400ms;z-index:99;">
+              <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
+                <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
+                <div class="subtitle text-logo">IET DAVV</div> </a>
+
+              <a class="nav-link w-nav-link w--nav-link-open" href="aakshank.org" style="">
+                  Home
+              </a>
+              <a class="nav-link w-nav-link w--nav-link-open" href="#" style="">
+                Gallery
+              </a>
+              <a class="nav-link w-nav-link w--nav-link-open" href="#" style=""> About
+              </a>
+              <a class="nav-link w-nav-link w--nav-link-open" href="#">Contact
+              </a>
+              <a class="nav-link w-nav-link w--nav-link-open" data-ix="open-popup" href="#" style="transition: background-color 0.5s ease 0s, border 0.5s ease 0s;">
+                Campus Ambassador
+              </a>
+            </nav>
+          </div>
+  
 <div id="fullpage">
   <section class="vertical-scrolling" id="one">
     <div class="navbar-wrapper" data-ix="show-navbar" style="opacity: 1; transition: opacity 500ms ease 0s;">
@@ -54,11 +81,7 @@
               Campus Ambassador
             </a>
           </nav>
-          <div class="menu-button w-nav-button">
-            <div class="hamburger-icon w-icon-nav-menu"></div>
-          </div>
         </div>
-        <div class="w-nav-overlay" data-wf-ignore=""></div>
       </div>
     </div>
     <!--top layer-->
@@ -98,22 +121,24 @@
     </div>
   </section>
 <!-- ////////////////////////////////////////////////////PAGE #2///////////////////////////////////////////// -->
-  <section class="vertical-scrolling">
-    <div class="home-intro section" id="two">
+  <section class="vertical-scrolling" id="two">
+    <div class="home-intro section">
+      <div class="center">
         <div class="centered home-container w-container">
             <h2 class="white-section-title">INTRODUCTION.</h2>
         </div>
         <div class="feature-container w-container">
             <div class="intro-features w-row">
-              <p class="service-title" style="text-align:justify;">
-                A four day surfeit of fun activities and ecstasy, AAKSHANK , central India's mega and fantabulous event is back again with, more plus extra, electrifying and vivifying events.<br>
+              <p id="intro">
+                A four day surfeit of fun activities and ecstasy, AAKSHANK , central India's mega and fantabulous event is back again with, more plus extra, electrifying and vivifying events.<br><br>
                 Our fest covers diverse events ranging from competitions like Dance, Drama, Fashion show, Singing to Star nights, DJ Nights, Informals and Stuntmania.<br><br>
-                Till now AAKSHANK had the opportunity of being a platform for great stars and performers of the country like Papon, Nkhil D'souza, Mohammed Irfan, Gajendra Verma, Nikhil Chinappa, DJ Willy, Progressive Brothers ..... and the list can go on and on. 
+                Till now AAKSHANK had the opportunity of being a platform for great stars and performers of the country like <br> <b>Papon, Nkhil D'souza, Mohammed Irfan, Nikhil Chinappa, DJ Willy, Progressive Brothers</b> <br> and the list can go on and on. <br><br>
                 Having blessed to be a part of the distinguished cultural bonanza, we, students of IET invite you all to our event.<br>
                 Join us and together we'll make AAKSHANK the most gratifying and memorable 4 days of the year 2019.
               </p>
             </div>
         </div>
+      </div>
     </div>
   </section>
   <section class="vertical-scrolling">
@@ -153,17 +178,19 @@
 
   <section class="vertical-scrolling">
     <!-- write code hhere -->
+    <h1>content here</h1>
   </section>
 
   <section class="vertical-scrolling">
      <!--write code hhere -->
+     <h1>content here</h1>
   </section>
 
 </div>
 <script src="js/webfont.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
-<!--<script src="js/modernizr-2.7.1.js" type="text/javascript"></script>
- <script src="js/script.js" type="text/javascript"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js'></script>
+<!--<script src="js/modernizr-2.7.1.js" type="text/javascript"></script>-->
+<!--  <script src="js/script.js" type="text/javascript"></script> --> 
 <script type="text/javascript">
       WebFont.load({
         google: {
@@ -181,14 +208,20 @@
 <script type="text/javascript">
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#B8AE9C', '#348899', '#333', '#B8AE9C', '#B8B89F'],
+  sectionsColor: ['#ffffff00', '#ffffff00', '#333', '#B8AE9C', '#B8B89F'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
-  controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+  controlArrows: true,
+  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection','sixth','seventh','eighth'],
   menu: '#menu',
+  scrollOverflowOptions: { click: false },
+});
+$(".hamburger-icon").click(function(){
+  $("#menu").animate({
+    width: "toggle"
+  });
 });
 </script>
 </body>

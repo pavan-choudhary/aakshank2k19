@@ -6,11 +6,14 @@ body{
 	
 }
 #one{
-	background:url(../assets/img/backdrop.JPG);
+	background:url(../assets/img/p6.JPG);
 	background-position: center;
 	background-size:cover;
 }
-#two{ height:100%; }
+#two{ height:100%;
+	background-image:url(../assets/lantern1.jpg);
+	background-size:cover;
+	background-position:center;   }
 .top-layer{
 	height:100%;
 	width:100%;
@@ -40,6 +43,23 @@ body{
 	font-family:'Oswald';
 	margin-left:50px; font-size:20px; padding-top:20px;text-align:center;
 	text-decoration:underline overline;
+}
+
+#menu{
+	width:60%;height: 655px;display:none;position:fixed;top:0;z-index:99
+}
+.center{
+	position: absolute;
+  top: 50%;
+  right:5px;
+  padding:10px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*INTRO*/
+#intro{
+	text-align:center; font-family:Roboto ;color:#fff;font-size:18px; line-height:20px;
+	overflow-y:scroll;
 }
 /*STARS SECTION*/
 .star{

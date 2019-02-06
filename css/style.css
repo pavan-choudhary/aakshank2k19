@@ -277,6 +277,9 @@ p {
   font-size: 34px;
   text-align: center;
   display:none;
+  position:fixed;
+  z-index:101;
+  top:16px;right:10px;
 }
 
 .menu-button:hover {
@@ -673,7 +676,7 @@ p {
   left: 0px;
   top: 0px;
   right: 0px;
-  z-index: 1000;
+  z-index: 100;
   padding-top: 45px;
 }
 

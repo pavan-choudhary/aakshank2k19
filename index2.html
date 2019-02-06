@@ -11,12 +11,10 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="css/timelineStyle.css">
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/ZeroX-DG/style-helper/master/scss/_FlatColors.scss">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css"> -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -45,7 +43,7 @@
   <center><img src="assets/logo.png"></center>
 </div>
   <!-- MENU -->
-<div class="menu-button w-nav-button" style="position:fixed; z-index:99; display:block; top:16px;right:10px;">
+<div class="menu-button w-nav-button">
   <div class="hamburger-icon w-icon-nav-menu"></div>
 </div>
   <div class="w-nav-overlay" data-wf-ignore=""> </div>
@@ -73,15 +71,10 @@
   
 <div id="fullpage">
   <section class="vertical-scrolling" id="one">
-    <div class="navbar-wrapper" data-ix="show-navbar" style="opacity: 1; transition: opacity 500ms ease 0s;">
+    <div class="navbar-wrapper" data-ix="show-navbar" style="opacity:1;">
       <div class="navbar w-nav" data-animation="over-left" data-collapse="medium" data-doc-height="1" data-duration="400">
         <div class="navbar-container w-container">
           <a class="logo-container" href="http://www.aakshank.org">
-            <!--logo
-            <div class="logo-image" style="display:inline-block;width:100px;">
-              <img src="assets/img/log.png" alt="" />
-            </div>
-            -->
             <div style="display:inline-block;">
               <div class="text-logo pad-top" style="display:inline-block;">
                 Aakshank <sup>2K19</sup>
@@ -114,6 +107,7 @@
         </div>
       </div>
     </div>
+    <!--nav bar ends here-->
     <!--top layer-->
     <div class="top-layer">
       <div class="w-row">
@@ -121,7 +115,7 @@
           <center><img src="assets/logo.png" class="logo-image"></center>
         </div>
         <div class="w-col w-col-8 w-col-tiny-12">
-          <h1 id="home-subtitle" style="font-family:Kaushan Script">
+          <h1 id="home-subtitle" class="wow bounceInDown" data-wow-delay="1s">
               <span>"Welcome to</span> <br> &nbsp;
               <span> Central India's</span><br> &nbsp;&nbsp; 
               <span> Largest Cultural Fest!!"</span><br>
@@ -159,7 +153,7 @@
         </div>
         <div class="feature-container w-container">
             <div class="intro-features w-row">
-              <p id="intro">
+              <p id="intro" class="wow fadeIn" data-wow-duration="1s">
                 A four day surfeit of fun activities and ecstasy, AAKSHANK , central India's mega and fantabulous event is back again with, more plus extra, electrifying and vivifying events.<br><br>
                 Our fest covers diverse events ranging from competitions like Dance, Drama, Fashion show, Singing to Star nights, DJ Nights, Informals and Stuntmania.<br><br>
                 Till now AAKSHANK had the opportunity of being a platform for great stars and performers of the country like <br> <b>Papon, Nkhil D'souza, Mohammed Irfan, Nikhil Chinappa, DJ Willy, Progressive Brothers</b> <br> and the list can go on and on. <br><br>
@@ -412,6 +406,7 @@
       </div>
     </div>
   </section>
+  <!-- THIS YEAR  STARS 
   <section class="vertical-scrolling">
     <div class="centered home-container w-container">
       <h2 class="white-section-title">STARS 2019</h2>
@@ -426,32 +421,33 @@
       </div>
       </div>
     </div>
-  </section>
-  <section class="vertical-scrolling">
-    <div class="centered home-container w-container">
-      <h2 class="white-section-title">PREVIOUS STARS</h2>
+  </section> -->
+  <section class="vertical-scrolling" id="four">
+    <div class="horizontal-scrolling">
+      <div class="section">
+        <div class="centered home-container w-container">
+          <h2 class="white-section-title">PREVIOUS STARS</h2>
+        </div>
+          <div class="star wow bounceInUp" data-wow-duration="1s">
+            <img src="assets/stars/nikhild.jpg">
+          </div>
+          <div class="star wow bounceInUp" data-wow-duration="1.2s">
+            <img src="assets/stars/chinappa.jpg">
+          </div>
+          <div class="star wow bounceInUp" data-wow-duration="1.3s">
+            <img src="assets/stars/papon.jpg">
+          </div>
+          <div class="star wow bounceInUp" data-wow-duration="1.4s">
+            <img src="assets/stars/willy.jpg">
+          </div>
     </div>
-    <div class="w-container">
-      <div class="star">
-        <img src="assets/stars/nikhild.jpg">
-      </div>
-      <div class="star">
-        <img src="assets/stars/chinappa.jpg">
-      </div>
-      <div class="star">
-        <img src="assets/stars/papon.jpg">
-      </div>
-      <div class="star">
-        <img src="assets/stars/willy.jpg">
-      </div>
+    </div>
+    <div class="horizontal-scrolling">
+      <h2>fullPage.js</h2>
+      <h3>This is the second slide</h3> 
+      <p class="end">Thank you!</p>
     </div>
   </section>
-
-  <section class="vertical-scrolling">
-    <!-- write code hhere -->
-    <h1>content here</h1>
-  </section>
-
   <section class="vertical-scrolling">
      <!--write code hhere -->
      <h1>content here</h1>
@@ -459,7 +455,8 @@
 
 </div>
 <script src="js/webfont.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js'></script>
+<script src='js/fullpage.min.js'></script>
+<script src="js/wow.min.js"></script>
 <!--<script src="js/modernizr-2.7.1.js" type="text/javascript"></script>-->
 <!--  <script src="js/script.js" type="text/javascript"></script> --> 
 <script type="text/javascript">
@@ -469,6 +466,7 @@
             "Kaushan Script:400",
             ///"Lobster:400",
             "Oswald:300,400,700",
+            "Raleway: 400",
             "Montserrat:400,700",
             "PT Sans:400,400italic,700,700italic",
             "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
@@ -483,11 +481,11 @@ $('#fullpage').fullpage({
   sectionsColor: ['#ffffff00', '#ffffff00', '#333', '#B8AE9C', '#B8B89F'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
-  navigation: true,
   slidesNavigation: true,
-  controlArrows: true,
+  controlArrows: false,
   anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection','sixth','seventh','eighth'],
   menu: '#menu',
+  scrollBar:true,
   scrollOverflowOptions: { click: false },
 });
 $(".hamburger-icon").click(function(){
@@ -495,10 +493,13 @@ $(".hamburger-icon").click(function(){
     width: "toggle"
   });
 });
+
 $(document).ready(function() {
   $("#fullpage").hide();
   $(window).load(function() {
     $("#load").fadeOut("slow");
+
+    new WOW().init(); 
     $("#fullpage").fadeIn();
   });
 });
@@ -506,7 +507,6 @@ $(document).ready(function() {
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -529,7 +529,7 @@ function showSlides(n) {
 
   slides[slideIndex-1].style.display = "block";
 
-} 
+}
 </script>
 </body>
 

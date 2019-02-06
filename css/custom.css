@@ -3,10 +3,10 @@ font-family: "protos";
 src: url("../fonts/Protos.otf");
 }
 body{
-	
+	overflow:hidden !important;
 }
 #load{
-	height:100%;width:100%;position:absolute;top:0;right:0; background-color:#000; z-index:100;
+	height:100%;width:100%;position:absolute;top:0;right:0; background-color:#000; z-index:999;
 }
 #load img{
 	animation: zoo 2s ease-in infinite;
@@ -27,6 +27,12 @@ body{
 	background-image:url(../assets/lantern1.jpg);
 	background-size:cover;
 	background-position:center;   }
+#four{
+	height:100%;
+	background-image:url(../assets/lantern1.jpg);
+	background-size:cover;
+	background-position:center;  
+}
 .top-layer{
 	height:100%;
 	width:100%;
@@ -42,13 +48,14 @@ body{
 #home-subtitle{
 	color:#fff;
 	margin-top:60px;
-  font-family:"Lobster";
+  font-family:Kaushan Script;
   font-size:40px;
   letter-spacing:3px;
   line-height:60px;
 }
 #home-subtitle span{
 	padding:3px;
+	font-family:Kaushan Script;
 	background-color:rgba(0,0,0,0.2);
 }
 #head2{
@@ -59,7 +66,7 @@ body{
 }
 
 #menu{
-	width:60%;height: 655px;display:none;position:fixed;top:0;z-index:99
+	width:60%;height: 655px;display:none;position:fixed;top:0;z-index:999;
 }
 .center{
 	position: absolute;
@@ -72,10 +79,9 @@ body{
 /*INTRO*/
 #intro{
 	text-align:center; font-family:Roboto ;color:#fff;font-size:18px; line-height:20px;
-	overflow-y:scroll;
 }
 /*STARS SECTION*/
-.star{
+.star{		
 		width:200px;
 		display:inline-block;
 }
@@ -107,10 +113,15 @@ body{
 		bottom:6em;
 		margin-left:0;
 	}
+
+	#intro{overflow-y:scroll;}
 	/*STARS SEcTION*/
 	.star{
-		width:45%;
+		width:49%;
 		display:inline-block;
+	}
+	.star img{
+		height:auto;
 	}
 	.star2{
 		width:80%;

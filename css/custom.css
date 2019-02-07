@@ -58,6 +58,21 @@ body{
 	font-family:Kaushan Script;
 	background-color:rgba(0,0,0,0.2);
 }
+#csoon{
+	color:#fff;
+	font-size:3em;
+	width:100%;
+	font-family:'Oswald';
+	animation-duration: 3s;
+	animation-delay:1s;
+	text-decoration:underline overline;
+}
+#soonbox{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:3em;
+}
 #head2{
 	color:#fff;
 	font-family:'Oswald';

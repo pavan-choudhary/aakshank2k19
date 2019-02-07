@@ -1,0 +1,54 @@
+@media only screen and (max-width: 768px) {
+  .col-xs-6 {
+    max-width: 45% !important;
+    display: inline-block;
+    margin: 40px 2% 0 !important;
+  }
+  .day-events img {
+    max-width: 100% !important;
+  }
+  figure {
+    padding: 5px !important;
+    width: 100% !important;
+  }
+  .day-events {
+    padding-top: 20px !important;
+  }
+}
+
+.day-events h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.col-md-4 {
+  max-width: 30%;
+  display: inline-block;
+  margin: 0 20px 30px;
+  height: 10% !important;
+}
+
+.row {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.day-events {
+  height: 100%;
+  width: 100%;
+  background-color: #2475b0;
+  padding-top: 10px;
+  height: 100%;
+}
+
+figure {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5% 5% 2%;
+  width: 90%;
+  font-size: 1.5em;
+}
+
+/* .day-events img {
+  max-width: 90%;
+} */

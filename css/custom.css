@@ -23,10 +23,10 @@ body{
 	background-position: center;
 	background-size:cover;
 }
-#two{ height:100%;
+#two ,.day-events{ height:100%;
 	background-image:url(../assets/lantern1.jpg);
 	background-size:cover;
-	background-position:center;   }
+	background-position:center;  }
 #four{
 	height:100%;
 	background-image:url(../assets/lantern1.jpg);
@@ -41,6 +41,12 @@ body{
 	background:rgba(0,0,0,0.5);
 	position:absolute;top:0;
 	z-index:99;
+}
+.overlay{
+	padding-top:20px;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
 }
 .logo-image{
 	width:300px;
@@ -81,19 +87,26 @@ body{
 }
 
 #menu{
-	width:60%;height: 655px;display:none;position:fixed;top:0;z-index:999;
+	width:60%;height:800px;display:none;position:fixed;top:0;z-index:999;
 }
-.center{
+/*.center{
 	position: absolute;
   top: 50%;
   right:5px;
   padding:10px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+}*/
 /*INTRO*/
 #intro{
-	text-align:center; font-family:Roboto ;color:#fff;font-size:18px; line-height:20px;
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+	text-align:center;
+	font-family:Lobster;
+	color:#fff;
+	font-size:22px;
+	line-height:30px;
 }
 /*STARS SECTION*/
 .star{		
@@ -129,7 +142,13 @@ body{
 		margin-left:0;
 	}
 
-	#intro{overflow-y:scroll;}
+	#intro{
+		font-size:18px;
+		line-height:25px;
+		overflow-y:scroll;
+		padding-left:25px;
+		padding-right:25px;
+	}
 	/*STARS SEcTION*/
 	.star{
 		width:49%;
@@ -165,5 +184,9 @@ body{
 	.text-logo {
     font-size: 2em;
     line-height: 15px;
+  }
+  #intro{
+  	padding-right:5px;padding-left:5px;
+  	line-height:20px;
   }
 }

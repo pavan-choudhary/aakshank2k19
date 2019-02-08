@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 .timeline-section {
-  background-color: #43ace3 !important;
+  background-image: url("../assets/lantern.jpg");
+  background-size:100% 100%;
 }
 .box {
   /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg); */
   background-size: cover;
-  width: 350px;
+  width: 500px;
   height: 100%;
   position: absolute;
   top: 50%;
@@ -20,14 +21,14 @@
 }
 
 .box-1 {
-  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
+  background-image: url("../assets/stars/nikhild.jpg");
 }
 
 .box-2 {
   background-image: url("../assets/stars/chinappa.jpg");
 }
 .box-3 {
-  background-image: url("../assets/stars/nikhild.jpg");
+  background-image: url("../assets/stars/willy.jpg");
 }
 .box-4 {
   background-image: url("../assets/stars/papon.jpg");
@@ -39,8 +40,8 @@
 .box .mask {
   width: 100%;
   height: 100%;
-  background-color: #004d99;
-  opacity: 0.5;
+  background-color:#002054;
+  opacity: 0.67;
 }
 /* .box .top {
   position: absolute;
@@ -63,13 +64,16 @@
   color: white;
   line-height: 30px;
   font-family: "Lato";
-  width: auto;
+  width:100%;
   padding: 15px;
   height: 100px;
-  float: left;
+  text-align:center;
 }
 .box .time #date {
-  font-size: 2.5em;
+  width:100%;
+  text-align:center;
+  font-size: 2.6em;
+  font-family:"Kaushan Script";
 }
 .box .time #fulldate {
   font-size: 1.5em;
@@ -82,10 +86,12 @@
   width: 100%;
 }
 .box .middle #hi {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-family:Oswald;
   margin-left: 15px;
 }
 .box .middle .timeline {
+  padding-right:10px;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -103,7 +109,7 @@
   margin-top: 30px;
   display: inline-block;
   width: 100%;
-  height: 65px;
+  height: auto;
 }
 .box .middle .timeline ul li .hour {
   float: left;
@@ -112,21 +118,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  width: 15%;
 }
 .box .middle .timeline ul li .hour #sub {
   font-size: 0.5em;
 }
 .box .middle .timeline ul li .work {
   float: right;
-  width: 80%;
+  width: 85%;
   height: auto;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: "Raleway";
+  padding-bottom:3px;
   border-bottom: 1px solid white;
 }
+.box .middle .timeline ul li .work span:nth-child(1){
+  font-family:"Kaushan Script";
+}
 .box .middle .timeline ul li .work #sub {
-  font-size: 0.8em;
+  font-size: 0.6em;
+  padding-top:3px;
 }
 .box .bottom {
   position: absolute;
@@ -217,7 +228,7 @@
     font-size: 2em;
   }
   .box .middle .timeline ul li .work {
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
   .box .middle .timeline ul li .work #sub {
     font-size: 0.7em;

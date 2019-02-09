@@ -6,7 +6,7 @@ body{
 	overflow:hidden !important;
 }
 #load{
-	height:100%;width:100%;position:absolute;top:0;right:0; background-color:#000; z-index:999;
+	height:100%;width:100%;position:absolute;bottom:300px;right:0; background-color:#000; z-index:999;
 }
 #load img{
 	animation: zoo 2s ease-in infinite;
@@ -103,18 +103,26 @@ body{
 	padding-left:20px;
 	padding-right:20px;
 	text-align:center;
-	font-family:Lobster;
+	font-family:Oswald;
 	color:#fff;
 	font-size:22px;
 	line-height:30px;
 }
 /*STARS SECTION*/
+#star2019{
+	width:70%;
+}
+#small{ display: none; }
+#large{ display:block; }
 .star{		
 		width:200px;
 		display:inline-block;
 }
 
 @media only screen and (max-width: 600px) {
+	#load{
+		height:100%;width:100%;position:absolute;top:0;right:0; background-color:#000; z-index:999;
+	}
 	.top-layer{
 		width:100%;
 		margin:0;
@@ -150,6 +158,11 @@ body{
 		padding-right:25px;
 	}
 	/*STARS SEcTION*/
+	#star2019{
+		width:100%;
+	}
+	#large{ display: none; }
+	#small{ display: block; }
 	.star{
 		width:49%;
 		display:inline-block;

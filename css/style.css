@@ -627,11 +627,11 @@ p {
 .white-section-title {
   margin-top: 0px;
   margin-bottom: 25px;
-  font-family: Oswald, sans-serif;
+  text-shadow:3px 3px 4px #000;
+  font-family:Kaushan Script;
   color: #fff;
-  font-size: 60px;
-  line-height: 59px;
-  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 45px;
 }
 
 .white-section-title._2 {
@@ -1987,7 +1987,7 @@ html.w-mod-js *[data-ix="team-tab-text"] {
   }
   .white-section-title {
     margin-bottom: 16px;
-    font-size: 42px;
+    font-size: 37px;
     line-height: 47px;
   }
   .service-icon {
@@ -2287,7 +2287,7 @@ html.w-mod-js *[data-ix="team-tab-text"] {
     padding-left: 0px;
   }
   .white-section-title {
-    font-size: 35px;
+    font-size: 45px;
     line-height: 39px;
   }
   .white-section-title._2 {
@@ -2688,7 +2688,8 @@ html.w-mod-js *[data-ix="team-tab-text"] {
   .white-section-title {
     margin-bottom: 11px;
     margin-right:30px;
-    font-size: 24px;
+    font-size: 34px;
+    font-weight:normal;
     line-height: 25px;
     text-align: center;
   }

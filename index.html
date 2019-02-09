@@ -1,125 +1,632 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Aakshank 2K19</title>
-    <script src="js/webfont.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <script type="text/javascript">
-      WebFont.load({
-        google: {
-          families: [
-            "Oswald:300,400,700",
-            "Montserrat:400,700",
-            "PT Sans:400,400italic,700,700italic",
-            "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
-            "Roboto:100,300,regular,italic,500,500italic,700,900"
-          ]
-        }
-      });
-    </script>
-    <script src="js/modernizr-2.7.1.js" type="text/javascript"></script>
-    <link href="assets/img/16x16.jpeg" rel="shortcut icon" type="image/x-icon" />
-  </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Aakshank 2K19</title>
+  <link href="assets/img/16x16.jpeg" rel="shortcut icon" type="image/x-icon" />
+  <meta name="theme-color" content="#242424">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script> 
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/timeventcontact.css">
+</head>
+<body>
+<div id="load">
+  <center><img src="assets/logo.png"></center>
+</div>
+  <!-- MENU -->
+<div class="menu-button w-nav-button">
+  <div class="hamburger-icon w-icon-nav-menu"></div>
+</div>
+  <div class="w-nav-overlay"> </div>
+  <div class="w-nav-overlay" id="menu">
+    <nav class="nav-menu w-nav-menu w--nav-menu-open" role="navigation" style="height:900px">
+      <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
+        <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
+        <div class="subtitle text-logo">IET DAVV</div> </a>
 
-  <body>
-    
-    <div
-      class="navbar-wrapper"
-      data-ix="show-navbar"
-      style="opacity: 1; transition: opacity 500ms ease 0s;"
-    >
-      <div
-        class="navbar w-nav"
-        data-animation="over-left"
-        data-collapse="medium"
-        data-doc-height="1"
-        data-duration="400"
-      >
+      <a class="nav-link w-nav-link w--nav-link-open" href="aakshank.org">Home
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#introd"> Introduction
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#timeline">Timeline
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#star2k19">Gallery
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="http://bit.do/AK19CR" target="blank"> Campus Ambassador
+      </a>
+      <a class="nav-link w-nav-link w--nav-link-open" href="#contact">Contact
+      </a>
+    </nav>
+  </div>
+  
+<div id="fullpage">
+  <section class="vertical-scrolling" id="one">
+    <div class="navbar-wrapper" data-ix="show-navbar">
+      <div class="navbar w-nav" data-animation="over-left" data-collapse="medium" data-doc-height="1" data-duration="400">
         <div class="navbar-container w-container">
           <a class="logo-container" href="http://www.aakshank.org">
-            <div style="display:inline-block;position:fixed;">
+            <div style="display:inline-block;">
               <div class="text-logo pad-top" style="display:inline-block;">
-                Aakshank 2K19
+                Aakshank <sup>2K19</sup>
               </div>
               <div class="subtitle text-logo">
                 IET DAVV's Annual Cultural fest
               </div>
             </div>
           </a>
-        <div class="logo-image" style="display:inline-block;padding-top:100px;">
-              <img src="assets/logo.png" alt="" / style="width:150px">
+          <!-- nav tabs here-->
+          <nav class="nav-menu w-nav-menu" role="navigation">
+            <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
+              <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
+              <div class="subtitle text-logo">IET DAVV</div> </a>
+              <a class="nav-link w-nav-link w--current" href="aakshank.org">Home
+              </a>
+              <a class="nav-link w-nav-link" href="#introd"> Introduction
+              </a>
+              <a class="nav-link w-nav-link" href="#timeline">Timeline
+              </a>
+              <a class="nav-link w-nav-link" href="#star2k19">Gallery
+              </a>
+              <a class="nav-link w-nav-link" href="http://bit.do/AK19CR" target="blank"> Campus Ambassador
+              </a>
+              <a class="nav-link w-nav-link" href="#contact">Contact
+              </a>
+          </nav>
         </div>
-        </div>
-        <div class="w-nav-overlay" data-wf-ignore=""></div>
       </div>
     </div>
-    <div class="home-hero" data-ix="show-fixed-navbar" id="top">
-      <div
-        class="home-slider w-slider"
-        data-animation="cross"
-        data-autoplay="1"
-        data-delay="5000"
-        data-duration="1500"
-        data-infinite="1"
-        data-ix="show-slider-arrows"
-      >
-        <div class="w-slider-mask">
-          <div
-            class="_2 home-slide w-slide"
-            style="transform: translateX(0px); opacity: 0; z-index: 21; transition: opacity 1500ms ease 0s;"
-          >
-            <div class="home-slide-overlay">
-              <div class="home-slide-container w-container">
-                <div class="slider-text-block">
-                  <h2
-                    class="home-slide-title"
-                    data-ix="slider-title-animation"
-                    style="opacity: 0; transform: translateX(-50px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
-                  >
-                    Coming Soon !!
-                  </h2>
-                  <h2 class="_2 home-slide-title"  style="margin-bottom:50px">
-                    <small>Central India's Largest Cultural Fest</small><br /></br>
-                    <!-- <b>contact@aakshank.org</b> -->
-                  </h2>
-          <div id="ca">
-            <center>
-              <p>Register for Campus Ambassador Here!!</p>
-              <a href="http://bit.do/AK19CR" target="blank" >CAMPUS AMBASSADOR</a></center>
-          </div>
-                </div>
+    <!--nav bar ends here-->
+    <!--top layer-->
+    <div class="top-layer">
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-tiny-12">
+          <center><img src="assets/logo.png" class="logo-image"></center>
+        </div>
+        <div class="w-col w-col-8 w-col-tiny-12">
+          <h1 id="home-subtitle" class="wow bounceInDown" data-wow-delay="0.4s">
+              <span>"Welcome to</span> <br> &nbsp;
+              <span> Central India's</span><br> &nbsp;&nbsp; 
+              <span> Largest Cultural Fest!!"</span><br>
+          </h1>
+        </div>
+      </div>
+      <div id="soonbox">
+        <h2 id="csoon" class="wow tada">COMING SOON!</h2>
+      </div>
+      <!-- countdown
+      <p id="head2"><b>Unveiling in</b></p>
+      <div class="clock-builder-output" style="width:auto"></div>
+      <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+      <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+      <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+      <script type="text/javascript">
+          $(function(){
+            FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+            var opts = {
+              clockFace: 'DailyCounter',
+              countdown: true,
+              language: 'Custom'
+            };  
+            var countdown = 1551502800 - ((new Date().getTime())/1000); // from: 03/02/2019 10:30 am +0530
+            countdown = Math.max(1, countdown);
+            $('.clock-builder-output').FlipClock(countdown, opts);
+          });
+      </script>
+      -->
+    </div>
+  </section>
+<!-- ////////////////////////////////////////////////////PAGE #2///////////////////////////////////////////// -->
+  <section class="vertical-scrolling" id="two">
+    <div class="home-intro section">
+      <div class="center">
+        <div class="centered home-container w-container">
+            <h2 class="white-section-title">Introduction.</h2>
+            <hr class="sep">
+        </div>
+        <div class="feature-container w-container">
+          <p id="intro" class="wow fadeIn" data-wow-duration="1s">
+            A four day surfeit of fun activities and ecstasy,<br> "Aakshank" , central India's mega and fantabulous event is back again with, more plus extra, electrifying and vivifying events.<br><br>
+            Our fest covers diverse events ranging from competitions like Dance, Drama, Fashion show, Singing to Star nights, DJ Nights, Informals and Stuntmania.<br><br>
+            Till now "Aakshank" had the opportunity of being a platform for great stars and performers of the country like <br> <b>Papon, Nkhil D'souza, Mohammed Irfan, Nikhil Chinappa, DJ Willy, Progressive Brothers</b> <br> and the list can go on and on. <br><br>
+            Having blessed to be a part of the distinguished cultural bonanza, we, students of IET invite you all to our event.<br>
+            Join us and together we'll make "Aakshank" the most gratifying and memorable 4 days of the year 2019.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vertical-scrolling timeline-section">
+    <div style="background:linear-gradient(to right, rgba(0,27,71,0.5),rgba(0,0,0,0.3)); height:100%">
+    <div class="box box-1 mySlides">
+      <div class="mask"></div>
+      <div class="time wow fadeInRight" data-wow-duration="1s">
+        <span id="date">Day 1</span><br>
+        <span id="fulldate">28<sup>th</sup> Feb, 2019</span>
+      </div>
+      <div class="middle wow fadeInRight" data-wow-duration="1s">
+        <span id="hi"> Venue: DAVV Auditorium !</span>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="hour">
+                <span></span>
+                <span id="sub">PM</span>
               </div>
-            </div>
+              <div class="work">
+                <span><b>Shayari</b></span><br />
+                <span id="sub">An entertaining session to witness young, sprouting gulzars taking you to heaven.</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span></span>
+                <span id="sub">PM</span>
+              </div>
+              <div class="work">
+                <span><b>Adakari</b></span><br />
+                <span id="sub">Comical, Creative, Zestful skit performances to soothe the mind.</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span></span>
+                <span id="sub">PM</span>
+              </div>
+              <div class="work">
+                <span><b>Goonj</b></span><br />
+                <span id="sub">Best in class music and orchestra straight into your feelings by college band.</span>
+              </div>
+            </li>
+            <li>
+              <div class="hour">
+                <span></span>
+                <span id="sub">PM</span>
+              </div>
+              <div class="work">
+                <span><b>College video</b></span><br />
+                <span id="sub">An evergreen clip from each one's heart that everybody longs for.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="bottom">
+      <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+      <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+      <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+    </div>
+    <div class="box box-2 mySlides">
+        <div class="mask"></div>
+        <div class="time wow fadeInRight" data-wow-duration="1s">
+          <span id="date">Day 2</span><br>
+          <span id="fulldate">1<sup>st</sup> March, 2019</span>
+        </div>
+        <div class="middle wow fadeInRight" data-wow-duration="1s">
+          <span id="hi"> Venue: DAVV Auditorium !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Vaani</span><br />
+                  <span id="sub">An open platform singing competition to showcase the crowd what you've got within.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Naach</span><br />
+                  <span id="sub">Wanna pitch some boogie woogie ? Well, from jazz to hip hop, rock to pop, witness all dance forms at one place.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Mridaksh</span><br />
+                  <span id="sub">A feast for eyes as gorgeously laden divas and cheerful built guys burn up the stage.</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
       </div>
     </div>
-    
-    <style type="text/css">
-      #ca{
-        color:#fff;
-      }
-      #ca a{
-        background:#ff5050;
-        color:#fff;border:1px inset black;
-        padding:10px 15px 10px 15px;
-        border-radius:5px;
-        text-decoration:none;
-        font-weight:bold;
-        font-size:13px; 
-      }
-      @media only screen and (min-width:700px) {
-      .logo-image{
-        position: absolute; left:15%; top:50px;
-      }
-    }
-    </style>
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script> 
+    <div class="box box-3 mySlides">
+        <div class="mask"></div>
+        <div class="time wow fadeInRight" data-wow-duration="1s">
+          <span id="date">Day 3</span><br>
+          <span id="fulldate">2<sup>nd</sup> March, 2019</span>
+        </div>
+        <div class="middle day-3-middle wow fadeInRight" data-wow-duration="1s">
+          <span id="hi"> Venue: IET DAVV !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Day events</span><br />
+                  <span id="sub"><b>Volleyball ,Street Football ,Paint your wings ,Zorbing ,Foosball ,Paintball ,Angry birds</b></span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>War of bands</span><br />
+                  <span id="sub">Glide over the medley at the band competition.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Shayri </span><br />
+                  <span id="sub">Bring out the 'Galib fan' within you as you say "wah wah" at the shayri mehfil.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Stand Up </span><br />
+                  <span id="sub">Say Sayonara! laugh out loud with the stand up comedy specials.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <b>
+                    <span>EDM Night</span><br />
+                    <span id="sub">Fasten your seat belts to dance like no one's watching as the DJ plays your favorite jams.</span>
+                  </b>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="box mySlides">
+        <div class="mask"></div>
+        <div class="time wow fadeInRight" data-wow-duration="1s">
+          <span id="date">Day 4</span><br>
+          <span id="fulldate">3<sup>rd</sup> March, 2019</span>
+        </div>
+        <div class="middle wow fadeInRight" data-wow-duration="1s">
+          <span id="hi"> Venue: IET DAVV !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Day events</span><br />
+                  <span id="sub"><b>Volleyball ,Street Football ,Paint your wings ,Zorbing ,Foosball ,Paintball ,Angry birds</b></span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>stand up</span><br />
+                  <span id="sub">Say Sayonara! to all your agonies and laugh out loud with the stand up comedy specials. </span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <span>Street dance battle</span><br />
+                  <span id="sub">Groove up to the beats and relinquish control as you avial the sight of a dazzling street dance face-off.</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span></span>
+                  <span id="sub">PM</span>
+                </div>
+                <div class="work">
+                  <strong>
+                  <span>Concert Night</span><br />
+                  <span id="sub">Submerge into the ocean of beats and rhythm as you witness a live performance by one of the most loved artists of the country.</span>
+                  </strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="bottom">
+        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <!-- <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!-- STAR 2019 -->
+  <section class="vertical-scrolling day-events">
+    <div class="overlay" style="overflow-y:scroll; height:100%">
+	    <div id="small">
+	      <center><h1 class="white-section-title" data-wow-duration="1.5s">Stars 2019</h1></center>
+	      <hr class="sep">
+	      <br>
+	      <center><img src="assets/stars/2019star.jpg" id="star2019"></center>
+	    </div>
+	    <div id="large">
+	    	<div class="w-row">
+	    		<div class="w-col w-col-3">
+	    			<center><h1 class="white-section-title" data-wow-duration="1.5s" style="margin-top:50%">Stars 2019</h1></center>
+	    		</div>
+	    		<div class="w-col w-col-4">
+	    			<center>
+	    				<img src="assets/stars/md.JPG">
+	    			</center>
+	    		</div>
+	    		<div class="w-col w-col-4">
+	    			<center>
+	    				<img src="assets/stars/pb.jpg" style="padding-top:30px">
+	    			</center>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+  </section>
+  <!-- STAR previous -->
+  <section class="vertical-scrolling" id="four">
+    <div class="section">
+      <div class="centered home-container w-container">
+        <h2 class="white-section-title">Previous Stars</h2>
+      </div>
+      <hr class="sep">
+        <div class="star wow bounceInUp" data-wow-duration="1s">
+          <img src="assets/stars/nikhild.jpg">
+        </div>
+        <div class="star wow bounceInUp" data-wow-duration="1.2s">
+          <img src="assets/stars/chinappa.jpg">
+        </div>
+        <div class="star wow bounceInUp" data-wow-duration="1.3s">
+          <img src="assets/stars/papon.jpg">
+        </div>
+        <div class="star wow bounceInUp" data-wow-duration="1.4s">
+          <img src="assets/stars/willy.jpg">
+        </div>
+    </div>
+  </section>
+
+  <!-- DAY EVENTS  -->
+  <section class="vertical-scrolling day-events">
+    <div class="overlay" style="overflow-y:scroll; height:100%">
+      <center><h1 class="white-section-title" data-wow-duration="1.5s">Day Events</h1></center>
+      <hr class="sep">
+      <div class="w-row">
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1s">
+          <figure>
+            <img src="assets/events/g1.jpg" alt="">
+            <figcaption>PaintBall</figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1.2s">
+          <figure>
+            <img src="assets/events/g6.jpg" alt="">
+            <figcaption>Volleyball</figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-12 w-col-4 wow fadeInLeft devent" data-wow-duration="1.3s">
+          <figure>
+            <img src="assets/events/g5.JPG" alt="">
+            <figcaption>StuntMania</figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1.4s">
+          <figure>
+            <img src="assets/events/g7.jpg" alt="">
+            <figcaption>Flash Mob</figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1.5s">
+          <figure>
+            <img src="assets/events/g8.JPG" alt="">
+            <figcaption>Zorbing</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vertical-scrolling day-events">
+    <div class="overlay" style="overflow-y:scroll; height:100%">
+      <center><h1 class="white-section-title" data-wow-duration="1.5s">Audi Events</h1></center>
+      <hr class="sep">
+      <div class="w-row">
+        <div class="w-col w-col-tiny-12 w-col-4 wow fadeInLeft devent" data-wow-duration="1s">
+          <figure>
+            <img src="assets/events/g2.jpg" alt="">
+            <figcaption>Mridaksh</figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1.2s">
+          <figure>
+            <img src="assets/events/g3.jpg" alt="">
+            <figcaption>Naach </figcaption>
+          </figure>
+        </div>
+        <div class="w-col w-col-tiny-6 w-col-4 wow fadeInLeft devent" data-wow-duration="1.3s">
+          <figure>
+            <img src="assets/events/g4.jpg" alt="">
+            <figcaption>Vaani </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact us section -->
+  <section class="vertical-scrolling contact-us-section">
+    <div class="contact-info overlay">
+      <center><div class="white-section-title" id="fun">Fun Begins Here!</div></center>
+      <div class="overlay" style="height:auto;padding-bottom:20px;">
+      <div class="contact-info-group">
+        <div class="contact-icon"><i class="fa fa-map-marker"></i>
+        </div>
+        <div class="contact-information">
+          <span>IET DAVV, Khandwa Road <br> Near Crystal IT Park, Indore (M.P)</span>
+        </div>
+      </div>
+      <div class="contact-info-group">
+        <div class="contact-icon">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="contact-information" style="line-height:1.5">
+          <span>Yash Kulshrestha(+91 7869909760)</span><br>
+          <span>Vishal Rawat(+91 8269354707)</span>
+        </div>
+      </div>
+      <div class="contact-info-group">
+        <div class="contact-icon">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <div class="contact-information">
+          <span>&nbsp;&nbsp;&nbsp;info@aakshank.org</span>
+        </div>
+      </div>
+      <div class="contact-info-group">
+        <div class="contact-information" style="margin-top:13px">
+        <span>Designed By:</span>
+          <br><a href="https://www.facebook.com/pvn6396" target="blank" class="credit">Pavan Choudhary</a>
+          <br><a href="https://www.facebook.com/aaditya.shrivastava.5" target="blank" class="credit">Aaditya Shrivastava</a>
+        </div>
+      </div>
+      
+      <center>
+        <div class="social-icons">
+          <h4>Find us on:</h4>
+          <a href="https://www.facebook.com/aakshankIET/" target="blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/aakshank/" target="blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCL4RUC6u72TNR1b_S27dvTA" target="blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </center>
+    </div>
+    </div>
+  </section>
+</div>
+<script src="js/webfont.js"></script>
+<script src='js/fullpage.min.js'></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Kaushan Script:400",
+            "Lobster:400",
+            "Oswald:300,400,700",
+            "Raleway: 400",
+            "Montserrat:400,700",
+            "Roboto:100,300,regular,italic,500,500italic,700,900"
+          ]
+        }
+      });
+</script>
+<script type="text/javascript">
+// fullpage customization
+$('#fullpage').fullpage({
+  sectionsColor: ['#ffffff00', '#ffffff00', '#333', '#B8AE9C', '#B8B89F'],
+  anchors: ['home','introd','timeline','star2k19','previous','dayevents','audievent','contact'],
+  sectionSelector: '.vertical-scrolling',
+  slideSelector: '.horizontal-scrolling',
+  controlArrows: false,
+  scrollBar:true,
+  touchSensitivity:7,
+});
+$(".hamburger-icon").click(function(){
+  $("#menu").animate(
+    { width: "toggle" }
+  );
+});
+$(".w--nav-link-open").click(function(){
+  $("#menu").animate(
+    { width: "toggle" }
+  );
+});
+
+$(document).ready(function() {
+  $("#fullpage").hide();
+  $(window).load(function() {
+    $("#load").fadeOut("slow");
+
+    new WOW().init(); 
+    $("#fullpage").fadeIn();
+  });
+});
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  console.log(slides)
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133672330-1"></script>
 <script>
@@ -129,9 +636,5 @@
 
   gtag('config', 'UA-133672330-1');
 </script>
-
-    <!--[if lte IE 9
-      ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
-    ><![endif]-->
-  </body>
+</body>
 </html>

@@ -9,7 +9,7 @@ body{
 	height:100%;width:100%;position:absolute;bottom:300px;right:0; background-color:#000; z-index:999;
 }
 #load img{
-	animation: zoo 2s ease-in infinite;
+	animation: zoo 3s ease-in infinite;
 	width:150px;
 	padding-top:30%;
 }
@@ -29,7 +29,7 @@ body{
 	background-position:center;  }
 #four{
 	height:100%;
-	background-image:url(../assets/lantern1.jpg);
+	background-image:url(../assets/img/backdrop.JPG);
 	background-size:cover;
 	background-position:center;  
 }
@@ -38,7 +38,7 @@ body{
 	width:100%;
 	padding-left:15%;
 	padding-top:160px;
-	background:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.62);
 	position:absolute;top:0;
 	z-index:99;
 }
@@ -183,12 +183,12 @@ body{
 		padding-top:100px;
 	}
 	.logo-image{
-		width:120px !important;
+		width:140px !important;
 	}
 	#home-subtitle{
-		padding-top:10px;
+		padding-top:20px;
 		margin-top:0;
-	  font-size:20px;
+	  font-size:25px;
 	  line-height:29px;
 	}
 	#head2{

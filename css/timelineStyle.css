@@ -10,6 +10,7 @@
   background-size:100% 100%;
 }
 .box {
+  background-image: url("../assets/stars/nikhild.jpg");
   /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg); */
   background-size: cover;
   width: 500px;
@@ -19,21 +20,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.box-1 {
-  background-image: url("../assets/stars/nikhild.jpg");
-}
-
-.box-2 {
-  background-image: url("../assets/stars/chinappa.jpg");
-}
-.box-3 {
-  background-image: url("../assets/stars/willy.jpg");
-}
-.box-4 {
-  background-image: url("../assets/stars/papon.jpg");
-}
-
 .box .but {
   cursor: pointer;
 }
@@ -179,32 +165,6 @@
   background-color: #4d004d;
 }
 
-/* Fading animation */
-.fade-effect {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .mySlides {
   display: none;
 }
@@ -233,4 +193,8 @@
   .box .middle .timeline ul li .work #sub {
     font-size: 0.7em;
   }
+}
+
+@media only screen and (max-width: 370px) {
+
 }

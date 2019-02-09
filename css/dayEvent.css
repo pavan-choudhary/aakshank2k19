@@ -1,12 +1,125 @@
-.devent{
-  padding:4px;margin:0;
+.devent {
+  padding: 4px;
+  margin: 0;
 }
-figure{
-  margin:0;
+figure {
+  margin: 0;
 }
-.devent figcaption{
-  margin:0;
-  color:#fff;
-  font-family:Lobster;
+.devent figcaption {
+  margin: 0;
+  color: #fff;
+  font-family: Lobster;
   font-size: 1.4em;
+}
+
+.map-div,
+.contact-info {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.contact-info {
+  background-color: #0a2a3b;
+  color: white;
+  padding-top: 3%;
+  padding: 3% 20px 0;
+}
+
+.contact-info h2 {
+  margin-bottom: 20%;
+}
+
+.contact-info-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  width: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.contact-information {
+  width: auto;
+  display: inline-block;
+  float: left;
+}
+
+.contact-info-group i {
+  font-size: 2.5em;
+}
+
+.contact-info-group span {
+  font-size: 1.5em;
+}
+
+.contact-button {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 3.5px;
+  border: 2px solid white;
+  height: 50px;
+  margin-top: 50px;
+  width: 30%;
+  font-size: 1.5em;
+}
+
+.social-icons {
+  margin-top: 20%;
+}
+
+.social-icons h3 {
+  color: white;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-xs-6 {
+    max-width: 45% !important;
+    display: inline-block;
+    margin: 20px 2% 0 !important;
+  }
+  .day-events img {
+    max-width: 100% !important;
+  }
+  figure {
+    padding: 5px !important;
+    width: 100% !important;
+  }
+  .day-events {
+    padding-top: 15px !important;
+  }
+  .day-events h1 {
+    margin-top: 0 !important;
+  }
+  .map-div,
+  .contact-info {
+    width: 100%;
+    float: left;
+    height: 50%;
+  }
+  .contact-info {
+    padding-top: 5%;
+  }
+  .contact-info h2 {
+    margin-bottom: 50px;
+  }
+  .contact-info-group {
+    margin-top: 20px;
+  }
+  .social-icons {
+    margin-top: 40px;
+  }
 }

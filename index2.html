@@ -506,6 +506,46 @@
       </div>
     </div>
   </section>
+  <!-- Contact us section -->
+  <section class="vertical-scrolling contact-us-section">
+    <div class="contact-info">
+      <center><h2>Fun Begins Here!</h2></center>
+      <div class="contact-info-group">
+        <div class="contact-icon">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="contact-information">
+          <span>IET, DAVV, Khandwa Road, Near Crystal IT Park, Indore (M.P)</span>
+        </div>
+      </div>
+      <div class="contact-info-group">
+        <div class="contact-icon">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="contact-information" style="line-height:1.5">
+          <span>Xyz(9039562949)</span><br>
+          <span>Hsh(12455889)</span>
+        </div>
+      </div>
+      <div class="contact-info-group">
+        <div class="contact-icon">
+          <i class="fa fa-envelope "></i>
+        </div>
+        <div class="contact-information">
+          <span>info@aakshank.org</span>
+        </div>
+      </div>
+      <center>
+        <div class="social-icons">
+          <h3>Find us on:</h3>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </center>
+    </div>
+    <div class="map-div" id="map"></div>
+  </section>
   <section class="vertical-scrolling">
      <h1>conTACT SECTION</h1>
   </section>
@@ -585,6 +625,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 </script>
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var iet = {lat: 22.681459, lng: 75.878598};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: iet});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: iet, map: map});
+  }
+      </script>
+      <!--Load the API from the specified URL
+      * The async attribute allows the browser to render the page while the API loads
+      * The key parameter will contain your own API key (which is not needed for this tutorial)
+      * The callback parameter executes the initMap() function
+      -->
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9lVD6fWtlGnDwu_AFop5qOk-RbCOZdvU&callback=initMap">
+      </script>
+  
 </body>
 
 </html>

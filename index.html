@@ -34,13 +34,13 @@
         <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
         <div class="subtitle text-logo">IET DAVV</div> </a>
 
-      <a class="nav-link w-nav-link w--nav-link-open" href="aakshank.org">Home
+      <a class="nav-link w-nav-link w--nav-link-open" href="http://www.aakshank.org">Home
       </a>
       <a class="nav-link w-nav-link w--nav-link-open" href="#introd"> Introduction
       </a>
       <a class="nav-link w-nav-link w--nav-link-open" href="#timeline">Timeline
       </a>
-      <a class="nav-link w-nav-link w--nav-link-open" href="#star2k19">Gallery
+      <a class="nav-link w-nav-link w--nav-link-open" href="#star2k18">Gallery
       </a>
       <a class="nav-link w-nav-link w--nav-link-open" href="http://bit.do/AK19CR" target="blank"> Campus Ambassador
       </a>
@@ -69,13 +69,13 @@
             <a class="logo-container responsive-menu w-hidden-main w-inline-block w--current" href="#">
               <div class="text-logo" style="font-size:20px;">AAKSHANK</div>
               <div class="subtitle text-logo">IET DAVV</div> </a>
-              <a class="nav-link w-nav-link w--current" href="aakshank.org">Home
+              <a class="nav-link w-nav-link w--current" href="http://www.aakshank.org">Home
               </a>
               <a class="nav-link w-nav-link" href="#introd"> Introduction
               </a>
               <a class="nav-link w-nav-link" href="#timeline">Timeline
               </a>
-              <a class="nav-link w-nav-link" href="#star2k19">Gallery
+              <a class="nav-link w-nav-link" href="#star2k18">Gallery
               </a>
               <a class="nav-link w-nav-link" href="http://bit.do/AK19CR" target="blank"> Campus Ambassador
               </a>
@@ -396,7 +396,7 @@
   <section class="vertical-scrolling day-events">
     <div class="overlay" style="overflow-y:scroll; height:100%">
 	    <div id="small">
-	      <center><h1 class="white-section-title" data-wow-duration="1.5s">Stars 2019</h1></center>
+	      <center><h1 class="white-section-title" data-wow-duration="1.5s">Stars 2018</h1></center>
 	      <hr class="sep">
 	      <br>
 	      <center><img src="assets/stars/2019star.jpg" id="star2019"></center>
@@ -488,7 +488,7 @@
       <div class="w-row">
         <div class="w-col w-col-tiny-12 w-col-4 wow fadeInLeft devent" data-wow-duration="1s">
           <figure>
-            <img src="assets/events/g2.jpg" alt="">
+            <img src="assets/events/g2.jpeg" alt="">
             <figcaption>Mridaksh</figcaption>
           </figure>
         </div>
@@ -524,8 +524,8 @@
           <i class="fa fa-phone"></i>
         </div>
         <div class="contact-information" style="line-height:1.5">
+          <span>Vishal Rawat(+91 8269354707)</span><br>
           <span>Yash Kulshrestha(+91 7869909760)</span><br>
-          <span>Vishal Rawat(+91 8269354707)</span>
         </div>
       </div>
       <div class="contact-info-group">
@@ -533,7 +533,7 @@
           <i class="fa fa-envelope"></i>
         </div>
         <div class="contact-information">
-          <span>&nbsp;&nbsp;&nbsp;info@aakshank.org</span>
+          <span>&nbsp;&nbsp;&nbsp;contact@aakshank.org</span>
         </div>
       </div>
       <div class="contact-info-group">
@@ -577,7 +577,7 @@
 // fullpage customization
 $('#fullpage').fullpage({
   sectionsColor: ['#ffffff00', '#ffffff00', '#333', '#B8AE9C', '#B8B89F'],
-  anchors: ['home','introd','timeline','star2k19','previous','dayevents','audievent','contact'],
+  anchors: ['home','introd','timeline','star2k18','previous','dayevents','audievent','contact'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   controlArrows: false,
@@ -596,12 +596,12 @@ $(".w--nav-link-open").click(function(){
 });
 
 $(document).ready(function() {
-  $("#fullpage").hide();
+  //$("#fullpage").hide();
   $(window).load(function() {
     $("#load").fadeOut("slow");
 
     new WOW().init(); 
-    $("#fullpage").fadeIn();
+    $('#fullpage').fadeIn();
   });
 });
 </script>

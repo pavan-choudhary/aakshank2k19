@@ -5,6 +5,9 @@ src: url("../fonts/Protos.otf");
 body{
 	overflow:hidden !important;
 }
+#fullpage{
+	display:none;
+}
 #load{
 	height:100%;width:100%;position:absolute;bottom:300px;right:0; background-color:#000; z-index:999;
 }

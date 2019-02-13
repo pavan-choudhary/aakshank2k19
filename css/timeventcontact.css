@@ -210,7 +210,7 @@ figure {
 .devent figcaption {
   margin: 0;
   color: #fff;
-  font-family: Lobster;
+  font-family: Oswald;
   font-size: 1.4em;
 }
 .contact-us-section{
@@ -291,6 +291,14 @@ figure {
 }
 
 @media only screen and (max-width: 768px) {
+  .devent {
+  padding: 4px;
+  margin: 0;
+}
+.devent img{
+  padding:0;
+}
+
   .col-xs-6 {
     max-width: 45% !important;
     display: inline-block;

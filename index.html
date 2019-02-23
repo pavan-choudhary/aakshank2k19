@@ -417,17 +417,6 @@
       </div>
     </div>
   </section>
-  <section class="vertical-scrolling day-events star-2019">
-    <div class="overlay" style="overflow-y:scroll; height:100%">
-      <center>
-        <h1 class="white-section-title" data-wow-duration="1.5s">Comedian !!</h1>
-      </center>
-      <hr class="sep">
-      <center>
-        <img src="assets/stars/zakir.jpg" alt="">
-      </center>
-    </div>
-  </section>
   <section class="vertical-scrolling day-events">
     <div class="overlay" style="overflow-y:scroll; height:100%">
 	    <div id="small">
@@ -558,7 +547,8 @@
   </section>
   <!-- Sposors section -->
   <section class="vertical-scrolling sponsors-section">
-    <div style="background:linear-gradient(to right, rgba(10,121,223,0.6),rgba(0,0,0,0.1)); height:100%; padding-top: 20px;">
+    <div style="height:100%; background:rgba(0,0,0,0.5);">
+      <div class="overlay">
       <center>
         <h1 class="white-section-title" data-wow-duration="1.5s">Our Sponsors</h1>
         <hr class="sep">
@@ -616,6 +606,7 @@
             <img class="small-sponsor-image" src="assets/sponsors/ctl.png" alt="">
           </center>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -687,7 +678,7 @@
 // fullpage customization
 $('#fullpage').fullpage({
   sectionsColor: ['#ffffff00', '#ffffff00', '#333', '#B8AE9C', '#B8B89F'],
-  anchors: ['home','introd','timeline','star2k19','Comedian','star2k18','previous','dayevents','audievent','sponsors','contact'],
+  anchors: ['home','introd','timeline','star2k19','star2k18','previous','dayevents','audievent','sponsors','contact'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   controlArrows: false,

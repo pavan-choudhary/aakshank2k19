@@ -227,6 +227,54 @@ body {
   }
 }
 
+/* Sponsor */
+
+@media only screen and (max-width: 768px) {
+  .big-sponsor-image {
+    width: 30% !important;
+  }
+  .medium-sponsor-image {
+    width: 20% !important;
+  }
+  .small-sponsor-image {
+    width: 45% !important;
+    margin-top: 15% !important;
+  }
+  .sponsor-div-inline {
+    float: left;
+    width: 50% !important;
+    display: inline-block;
+  }
+}
+
+.sponsors-section h3 {
+  color: white;
+  margin-bottom: -20px;
+  margin-top: 20px;
+  font-family: oswlad;
+  font-size: 23px;
+}
+
+.big-sponsor-image {
+  width: 10%;
+}
+.medium-sponsor-image {
+  width: 4%;
+}
+
+.sponsor-div-inline {
+  float: left;
+  width: 25%;
+  display: inline-block;
+}
+
+.small-sponsor-image {
+  width: 25%;
+  margin-top: 8%;
+}
+
+/* Sponsor end */
+
 @media only screen and (max-width: 370px) {
   .top-layer {
     width: 100%;

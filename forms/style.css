@@ -3,16 +3,12 @@
 	src: url("../fonts/Protos.otf");
 }
 html{ padding:0;margin:0; }
-body{
-	margin:0;
-	background:url(naach.jpg) no-repeat; background-attachment:fixed; background-size:cover; background-position: 
-	center;
-	height:100%;
-	overflow-x:hidden; }
+
 .overlay{
 		background-color:rgba(0,0,0,0.86);
 		height:100%;padding-bottom:50px;
 		width:100%;color:#fff;
+		font-family:Oswald
 	}
 #title{
 	padding-top:23px;
@@ -45,5 +41,5 @@ body{
 @media only screen and (max-width: 700px) {
 	.form-control{width:90%}
 	.overlay{padding-top:15px;}
-	.col-md-5{ margin-top:2em;margin-right:0; }
+	.col-md-5{ margin-top:10px;margin-right:0; }
 }

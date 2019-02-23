@@ -144,6 +144,17 @@ body {
 #large {
   display: block;
 }
+.star-content{
+  padding:10px;
+  color:#fff;
+  text-align:center;
+  margin-top:100px;
+  font-family:Oswald;
+  font-size:25px
+}
+.star-content span{
+  font-family:Kaushan Script;
+}
 .star {
   width: 200px;
   display: inline-block;

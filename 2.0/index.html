@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#000" />
+      <!-- Compiled and minified CSS -->
+      <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aakshank 2K19</title>
+    <link href="assets/home/16x16.jpeg" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+<canvas id='canv'></canvas>
+<div id="home">
+  <div class="row">
+    <div class="col m2 offset-m1 offset-s0">
+    
+    </div>
+    <div class="col m6 s12">
+      <center>
+        <div id="logo">
+          <img src="assets/logo.png">
+        </div>
+        <div class="logo-text">AAKSHANK <sup><small>2K19</small> </sup> </div>
+        <!-- date animation-->
+        <h1 class="ml5">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters letters-left">2</span>
+            <span class="letters ampersand">&amp;</span>
+            <span class="letters letters-right">3 MARCH</span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+        <!-- countdown -->
+        <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+        <div class="clock-builder-output"></div>
+        <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+        <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+        <script type="text/javascript">
+            $(function(){
+              FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+              var opts = {
+                clockFace: 'DailyCounter',
+                countdown: true,
+                language: 'Custom'
+              };  
+              var countdown = 1551502800 - ((new Date().getTime())/1000); // from: 03/02/2019 10:30 am +0530
+              countdown = Math.max(1, countdown);
+              $('.clock-builder-output').FlipClock(countdown, opts);
+            });
+        </script>
+      </center>
+    </div>
+    <div class="col m2">
+    </div>
+  </div>
+</div>
+<h1>pavan</h1>
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/snow.js"></script>    
+</body>
+</html>

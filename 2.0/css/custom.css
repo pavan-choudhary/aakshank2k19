@@ -1,0 +1,102 @@
+html,body{ height:100%; width:100%;overflow-x:hidden; }
+@font-face {
+font-family: "protos";
+src: url("../fonts/Protos.otf");
+}
+#home{
+  height:100%;
+  padding-top:40px;
+  background-image:url(../assets/home/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#canv{
+  position:absolute;
+  z-index: 0;
+}
+.overlay{
+  background-color:rgba(0,0,0,0);
+  z-index:2;
+  height:100%; width:100%; position:absolute;
+}
+#logo img{
+  width: 250px;
+  height: 250px;
+  -webkit-animation-name: bounce;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;  /* Safari 4.0 - 8.0 */  
+  -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+  animation-name: bounce;
+  animation-duration: 5s;  
+  animation-iteration-count:infinite;
+  animation-fill-mode: forward;
+}
+.logo-text{
+  font-family:"protos";
+  color:#fff;
+  font-size:30px;
+  text-shadow: 4px 5px 6px #000;
+  margin-bottom:-25px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+  0% {transform:translate(0,10px);}
+  25% {transform:translate(0,0);}
+  50% {transform:translate(0,20px);}
+  75% {transform:translate(0,0);}
+  100% {transform:translate(0,10px);}
+}
+
+@keyframes bounce {
+  0% {transform:translate(0,10px);}
+  25% {transform:translate(0,0);}
+  50% {transform:translate(0,20px);}
+  75% {transform:translate(0,0);}
+  100% {transform:translate(0,10px);}
+}
+
+/* #########################################################################################################################################
+                                                            DATE ANIMATION
+########################################################################################################################################### */
+
+.ml5 {
+  position: relative;
+  font-weight: 600;
+  font-size: 2em;
+  color: #dbef02;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: teal;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}

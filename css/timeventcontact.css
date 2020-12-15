@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+.timeline-section {
+  background-image: url("../assets/lantern.jpg");
+  background-size:100% 100%;
+}
+.box {
+  background-image: url("../assets/stars/nikhild.jpg");
+  /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg); */
+  background-size: cover;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .but {
+  cursor: pointer;
+}
+.box .mask {
+  width: 100%;
+  height: 100%;
+  background-color:#002054;
+  opacity: 0.67;
+}
+/* .box .top {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 1.3em;
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+} */
+.box .top .menu {
+  float: left;
+}
+.box .top .search {
+  float: right;
+}
+.box .time {
+  position: absolute;
+  top: 0%;
+  color: white;
+  line-height: 30px;
+  font-family: "Lato";
+  width:100%;
+  padding: 15px;
+  height: 100px;
+  text-align:center;
+}
+.box .time #date {
+  width:100%;
+  text-align:center;
+  font-size: 2.6em;
+  font-family:"Kaushan Script";
+}
+.box .time #fulldate {
+  font-size: 1.5em;
+}
+
+.box .middle {
+  position: absolute;
+  color: white;
+  top: 15%;
+  width: 100%;
+}
+.box .middle #hi {
+  font-size: 1.2em;
+  font-family:Oswald;
+  margin-left: 15px;
+}
+.box .middle .timeline {
+  padding-right:10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box .middle .timeline ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+}
+.box .middle .timeline ul li {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.box .middle .timeline ul li .hour {
+  float: left;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+.box .middle .timeline ul li .hour #sub {
+  font-size: 0.5em;
+}
+.box .middle .timeline ul li .work {
+  float: right;
+  width: 85%;
+  height: auto;
+  font-size: 1.5em;
+  font-family: "Raleway";
+  padding-bottom:3px;
+  border-bottom: 1px solid white;
+}
+.box .middle .timeline ul li .work span:nth-child(1){
+  font-family:"Kaushan Script";
+}
+.box .middle .timeline ul li .work #sub {
+  font-size: 0.6em;
+  padding-top:3px;
+}
+.box .bottom {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box .bottom button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+.box .bottom #done {
+  color: white;
+  font-size: 1.1em;
+  background-color: Lime;
+}
+.box .bottom #done:hover {
+  background-color: #0c0;
+}
+.box .bottom #edit {
+  color: white;
+  font-size: 1.5em;
+  background-color: Red;
+}
+.box .bottom #edit:hover {
+  background-color: #c00;
+}
+.box .bottom #plus {
+  color: white;
+  font-size: 1.5em;
+  background-color: Red;
+}
+.box .bottom #plus:hover {
+  background-color: #4d004d;
+}
+
+.mySlides {
+  display: none;
+}
+
+.day-div {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+    height: 100%;
+  }
+  .box .middle {
+    top: 20% !important;
+  }
+  .box .day-3-middle {
+    top: 15% !important;
+  }
+  .box .middle #hi {
+    font-size: 2em;
+  }
+  .box .middle .timeline ul li .work {
+    font-size: 1.7em;
+  }
+  .box .middle .timeline ul li .work #sub {
+    font-size: 0.7em;
+  }
+}
+
+/*DAY EVENT AND CONTACT -------------------------------------------------------------------------------------*/
+
+.devent {
+  padding: 4px;
+  margin: 0;
+}
+.devent img{
+  padding-right:5%; padding-left:5%;
+}
+figure {
+  margin: 0;
+}
+.devent figcaption {
+  margin: 0;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 1.4em;
+}
+.contact-us-section{
+  background-image:url(../assets/img/backdrop.JPG);
+  background-size:100%;
+  background-position:center; 
+  color: white;
+  font-family:Oswald;
+}
+.contact-info {
+  padding-top:10%;
+  padding:20px;
+  text-align:center;
+}
+
+.contact-info h2 {
+  margin-bottom: 10%;
+}
+
+.contact-info-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  width: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.contact-information {
+  width: auto;
+  display: inline-block;
+}
+.credit{
+  color:#fff;
+  font-size:20px;
+  line-height:30px;
+  font-family: Kaushan Script;
+  text-decoration:none;
+}
+.contact-info-group i {
+  font-size: 2.5em;
+}
+
+.contact-info-group span {
+  font-size: 1.5em;
+}
+
+.contact-button {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 3.5px;
+  border: 2px solid white;
+  height: 50px;
+  margin-top: 50px;
+  width: 30%;
+  font-size: 1.5em;
+}
+
+.social-icons {
+  margin-top:60px;
+}
+
+.social-icons h3 {
+  color: white;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .devent {
+  padding: 4px;
+  margin: 0;
+}
+.devent img{
+  padding:0;
+}
+
+  .col-xs-6 {
+    max-width: 45% !important;
+    display: inline-block;
+    margin: 20px 2% 0 !important;
+  }
+  .day-events img {
+    width: 100% !important;
+  }
+.contact-us-section{
+   background-size:cover; 
+  }
+  #fun{
+    margin-bottom:50px;
+  }
+  .contact-info {
+    padding-top: 10%;
+  }
+  .contact-info h2 {
+    margin-bottom: 50px;
+  }
+  .contact-info-group {
+    margin-top: 20px;
+  }
+  .contact-icon .fa{
+    font-size:22px;
+  }
+  .social-icons {
+    margin-top: 40px;
+  }
+}
